@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.5.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>phpFlickr</name>
+ <uri>http://localhost/</uri>
+ <summary>PHP api for communicating with Flickr and 23hq photo album.</summary>
+ <description>phpFlickr is a class written by Dan Coulter in PHP4 to act as a wrapper for Flickr&apos;s API. Methods process the response XML and return a friendly array of data to make development simple and intuitive.</description>
+ <lead>
+  <name>Lars Olesen</name>
+  <user>lars</user>
+  <email>lars@legestue.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2007-03-25</date>
+ <time>00:48:29</time>
+ <version>
+  <release>1.6.1</release>
+  <api>1.6.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL License</license>
+ <notes>Needs to be filled in</notes>
+ <contents>
+  <dir baseinstalldir="phpFlickr" name="/">
+   <dir name="docs">
+    <dir name="example">
+     <file name="auth.php" role="doc">
+      <tasks:replace from="@package-version@" to="version" type="package-info" />
+     </file>
+     <file name="getToken.php" role="doc">
+      <tasks:replace from="@package-version@" to="version" type="package-info" />
+     </file>
+    </dir> <!-- //docs/example -->
+   </dir> <!-- //docs -->
+   <file name="phpFlickr.php" role="php">
+    <tasks:replace from="@package-version@" to="version" type="package-info" />
+   </file>
+   <file name="xml.php" role="php">
+    <tasks:replace from="@package-version@" to="version" type="package-info" />
+   </file>
+   <file name="xml_saxy_parser.php" role="php">
+    <tasks:replace from="@package-version@" to="version" type="package-info" />
+   </file>
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.5.0</min>
+   </pearinstaller>
+   <package>
+    <name>DB</name>
+    <channel>pear.php.net</channel>
+    <min>0.1.0</min>
+   </package>
+   <package>
+    <name>HTTP_Request</name>
+    <channel>pear.php.net</channel>
+    <min>0.1.8</min>
+   </package>
+   <package>
+    <name>Net_Socket</name>
+    <channel>pear.php.net</channel>
+    <min>0.1.8</min>
+   </package>
+   <package>
+    <name>Net_Url</name>
+    <channel>pear.php.net</channel>
+    <min>0.1.8</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.6.1</release>
+    <api>1.6.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>beta</api>
+   </stability>
+   <date>2007-03-25</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL License</license>
+   <notes>Needs to be filled in</notes>
+  </release>
+ </changelog>
+</package>
