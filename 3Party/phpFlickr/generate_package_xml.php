@@ -7,6 +7,10 @@
  * @version @package-version@
  */
 
+$version = '1.6.1';
+$notes = '* Intial release as intrafacepublic package';
+$stability = 'beta';
+
 require_once 'PEAR/PackageFileManager2.php';
 PEAR::setErrorHandling(PEAR_ERROR_DIE);
 $pfm = new PEAR_PackageFileManager2();
@@ -29,17 +33,18 @@ $pfm->setOptions(
 $pfm->setPackage('phpFlickr');
 $pfm->setSummary('PHP api for communicating with Flickr and 23hq photo album.');
 $pfm->setDescription('phpFlickr is a class written by Dan Coulter in PHP4 to act as a wrapper for Flickr\'s API. Methods process the response XML and return a friendly array of data to make development simple and intuitive.');
-$pfm->setUri('http://localhost/');
+$pfm->setChannel('public.intraface.dk');
 $pfm->setLicense('LGPL License', 'http://www.gnu.org/licenses/lgpl.html');
-$pfm->addMaintainer('lead', 'lars', 'Lars Olesen', 'lars@legestue.net');
+$pfm->addMaintainer('lead', 'lsolesen', 'Lars Olesen', 'lars@legestue.net');
+$pfm->addMaintainer('lead', 'sune.t.jensen', 'Sune Jensen', 'sj@sunet.dk');
 
 $pfm->setPackageType('php');
 
-$pfm->setAPIVersion('1.6.1');
-$pfm->setReleaseVersion('1.6.1');
-$pfm->setAPIStability('beta');
-$pfm->setReleaseStability('stable');
-$pfm->setNotes('Needs to be filled in');
+$pfm->setAPIVersion($version);
+$pfm->setReleaseVersion($version);
+$pfm->setAPIStability($stability);
+$pfm->setReleaseStability($stability);
+$pfm->setNotes($notes);
 $pfm->addRelease();
 
 $pfm->addGlobalReplacement('package-info', '@package-version@', 'version');
