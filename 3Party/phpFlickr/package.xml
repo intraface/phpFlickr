@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.5.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+<package packagerversion="1.6.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
     http://pear.php.net/dtd/tasks-1.0.xsd
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
  <name>phpFlickr</name>
- <uri>http://localhost/</uri>
+ <channel>public.intraface.dk</channel>
  <summary>PHP api for communicating with Flickr and 23hq photo album.</summary>
  <description>phpFlickr is a class written by Dan Coulter in PHP4 to act as a wrapper for Flickr&apos;s API. Methods process the response XML and return a friendly array of data to make development simple and intuitive.</description>
  <lead>
   <name>Lars Olesen</name>
-  <user>lars</user>
+  <user>lsolesen</user>
   <email>lars@legestue.net</email>
   <active>yes</active>
  </lead>
- <date>2007-04-08</date>
- <time>20:17:15</time>
+ <lead>
+  <name>Sune Jensen</name>
+  <user>sune.t.jensen</user>
+  <email>sj@sunet.dk</email>
+  <active>yes</active>
+ </lead>
+ <date>2007-11-27</date>
+ <time>11:59:32</time>
  <version>
   <release>1.6.1</release>
   <api>1.6.1</api>
  </version>
  <stability>
-  <release>stable</release>
+  <release>beta</release>
   <api>beta</api>
  </stability>
  <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL License</license>
- <notes>Needs to be filled in</notes>
+ <notes>* Intial release as intrafacepublic package</notes>
  <contents>
   <dir baseinstalldir="phpFlickr" name="/">
    <dir name="docs">
@@ -86,12 +92,12 @@
     <api>1.6.1</api>
    </version>
    <stability>
-    <release>stable</release>
+    <release>beta</release>
     <api>beta</api>
    </stability>
-   <date>2007-04-08</date>
+   <date>2007-11-27</date>
    <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL License</license>
-   <notes>Needs to be filled in</notes>
+   <notes>* Intial release as intrafacepublic package</notes>
   </release>
  </changelog>
 </package>
